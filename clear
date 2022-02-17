@@ -1,0 +1,37 @@
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/App.js.
+The file will have its original line endings in your working directory
+[1mdiff --git a/package.json b/package.json[m
+[1mindex 29e9a73..8491192 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -1,5 +1,6 @@[m
+ {[m
+   "name": "my_app",[m
+[32m+[m[32m  "homepage": "https://Immii-Ahmed.github.io/ReactWebsite",[m
+   "version": "0.1.0",[m
+   "private": true,[m
+   "dependencies": {[m
+[36m@@ -14,6 +15,8 @@[m
+     "web-vitals": "^1.1.2"[m
+   },[m
+   "scripts": {[m
+[32m+[m[32m    "predeploy": "npm run build",[m
+[32m+[m[32m    "deploy": "gh-pages -d build",[m
+     "start": "react-scripts start",[m
+     "build": "react-scripts build",[m
+     "test": "react-scripts test",[m
+[1mdiff --git a/src/App.js b/src/App.js[m
+[1mindex 7677527..fa6e56e 100644[m
+[1m--- a/src/App.js[m
+[1m+++ b/src/App.js[m
+[36m@@ -93,7 +93,7 @@[m [mfunction App() {[m
+     </div> */}[m
+ [m
+     <Alert AlertMessage={AlertMessage}/>[m
+[31m-    [m
+[32m+[m[32m    <Textform  btn2={btn2} text={text} mode2={mode2} ShowAlert={ShowAlert}/>[m
+     <div className="container my-4">[m
+     <Switch>[m
+           <Route exact path="/About">[m

@@ -93,7 +93,7 @@ function App() {
     </div> */}
 
     <Alert AlertMessage={AlertMessage}/>
-    
+    <Textform  btn2={btn2} text={text} mode2={mode2} ShowAlert={ShowAlert}/>
     <div className="container my-4">
     <Switch>
           <Route exact path="/About">
