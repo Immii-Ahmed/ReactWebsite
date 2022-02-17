@@ -1,0 +1,5 @@
+.custom-control-input:checked ~ 
+.custom-control-label::before {
+      border-color: violet !important;
+      background-color: violet !important;
+  }
